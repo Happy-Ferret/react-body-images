@@ -27,6 +27,10 @@ Dependencies: React >= 0.13.0
 
 ## Example
 
+
+
+![Example](example.jpg)
+
 ```jsx
 class SomeComponent {
   render() {
