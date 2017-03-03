@@ -38,7 +38,6 @@ function handleStateChangeOnClient(propiedades) {
       document.body.className = propiedades[key] || '';
     }else if(key=="bgImageArray" && typeof(propiedades[key])!="undefined" && propiedades[key].hasOwnProperty("length") && propiedades[key].length>0){
       if(propiedades[key].length==1) {
-        console.log("cargando imagen:"+propiedades[key][0]);
         new Image().src = propiedades[key][0];
         document.body.style.background = "url("+propiedades[key][0]+") no-repeat center center fixed";
         document.body.style.backgroundSize = "cover";
