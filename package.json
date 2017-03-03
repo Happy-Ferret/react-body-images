@@ -1,6 +1,6 @@
 {
   "name": "react-body-images",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A way to add one background image to body, or create body background slider. Based on Iestyn William's project react-body-className. So, you can manipulate your body's className too",
   "main": "index.js",
   "scripts": {

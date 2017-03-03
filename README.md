@@ -38,8 +38,10 @@ class SomeComponent {
 	// And add className 'home' too
 	// You should put the path to the image in the array.
 	// var images = ["/img/image1.jpg","/img/image2.jpg"];
+	// If this is a nested component you can specify if you want to show the background images or not using removeBackgroundImages property.
+	// If removeBackgroundImages is true in a nested component, the background images are the specified by the main Component.
     return (
-      <BodyImages className='home' bgImageArray={this.state.images} transitionSeconds={15}>
+      <BodyImages className='home' bgImageArray={this.state.images} transitionSeconds={15} removeBackgroundImages{true/false}>
         <h1>Hogar, dulce hogar.</h1>
       </BodyImages>
     );
@@ -52,8 +54,9 @@ class App {
 	// And add className 'app' too
 	// You should put the path to the image in the array.
 	// var images = ["/img/image1.jpg","/img/image2.jpg"];
+	// If you want to see in the console debug comments you can specify that using inDebugMode property.
     return (
-      <BodyImages className='app' bgImageArray={this.state.images} transitionSeconds={15}>
+      <BodyImages className='app' bgImageArray={this.state.images} transitionSeconds={15} inDebugMode={true}>
         <SomeComponent/>
       </BodyImages>
     );
@@ -79,6 +82,23 @@ class Thing {
   }
 }
 ```
+
+If you need to remove the background:
+
+```jsx
+import styles from './some.css';
+
+class Thing {
+  render() {
+    return (
+	  <BodyImages className={styles.body} removeBackgroundImages={true}>
+        <h1>CSS modules rock!</h1>
+      </BodyImages>
+    );
+  }
+}
+```
+
 
 ## Server Usage
 
