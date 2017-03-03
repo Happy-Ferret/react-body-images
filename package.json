@@ -1,0 +1,42 @@
+{
+  "name": "react-body-images",
+  "version": "1.0.0",
+  "description": "A way to add one background image to body, or create body background slider. Based on Iestyn William's project react-body-className. So, you can manipulate your body's className too",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "test:watch": "npm run test -- --watch",
+    "lint": "jshint index.js test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IdeasMX01/react-body-images"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "react-component",
+    "body.className",
+	"background-image",
+	"background-url",
+	"transitions",
+    "title",
+    "jsx"
+  ],
+  "author": "Erik Gooven <3kgven@gmail.com> (https://github.com/IdeasMX01)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IdeasMX01/react-body-images/issues"
+  },
+  "homepage": "https://github.com/IdeasMX01/react-body-images",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "global": "^4.3.0",
+    "jshint": "^2.5.6",
+    "mocha": "^2.0.1",
+    "react": "^0.13.0"
+  },
+  "dependencies": {
+    "react-side-effect": "^1.0.0"
+  }
+}
