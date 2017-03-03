@@ -36,6 +36,8 @@ class SomeComponent {
   render() {
     // This will add an array of background images to the body
 	// And add className 'home' too
+	// You should put the path to the image in the array.
+	// var images = ["/img/image1.jpg","/img/image2.jpg"];
     return (
       <BodyImages className='home' bgImageArray={this.state.images} transitionSeconds={15}>
         <h1>Hogar, dulce hogar.</h1>
@@ -48,6 +50,8 @@ class App {
   render() {
     // This will add an array of background images to the body
 	// And add className 'app' too
+	// You should put the path to the image in the array.
+	// var images = ["/img/image1.jpg","/img/image2.jpg"];
     return (
       <BodyImages className='app' bgImageArray={this.state.images} transitionSeconds={15}>
         <SomeComponent/>
@@ -65,6 +69,8 @@ import styles from './some.css';
 
 class Thing {
   render() {
+	// You should put the path to the image in the array.
+	// var images = ["/img/image1.jpg","/img/image2.jpg"];
     return (
 	  <BodyImages className={styles.body} bgImageArray={this.state.images} transitionSeconds={15}>
         <h1>CSS modules rock!</h1>
